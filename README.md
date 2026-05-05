@@ -1,6 +1,6 @@
-Proiect Machine Learning: Analiza PCA vs t-SNE si Clasificarea Cifrelor
+Analiza PCA vs t-SNE si Clasificarea Cifrelor
 
-###1) DE CE AM ALES PROIECTUL
+### 1) DE CE AM ALES PROIECTUL
 Am ales acest proiect deoarece reducerea dimensionalitatii este o problema fascinanta si esentiala in invatarea automata. M-a atras foarte mult ideea de a lua date complexe, cu multe dimensiuni (cum sunt miile de pixeli dintr-o imagine), si de a le comprima in 2D sau 3D pentru a le putea vizualiza si intelege uman. De asemenea, mi-am dorit sa compar o metoda liniara clasica (PCA) cu o metoda neliniara avansata (t-SNE) si sa observ practic cum afecteaza aceste transformari performanta si viteza unor algoritmi clasici de clasificare.
 
 ### 2) UN LINK DE UNDE AM LUAT DATELE
