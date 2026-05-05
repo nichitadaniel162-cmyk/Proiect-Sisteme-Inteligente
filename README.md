@@ -1,23 +1,16 @@
-Analiza Tehnicilor de Reducere a Dimensionalității: PCA vs t-SNE
+Proiect Machine Learning: Analiza PCA vs t-SNE si Clasificarea Cifrelor
 
-  📝 Descrierea Proiectului
-   Acest proiect se concentrează pe studiul și aplicarea a două metode fundamentale de reducere a dimensionalității: **PCA (Principal Component Analysis)** și **t-SNE (t-distributed Stochastic Neighbor Embedding)**. 
+###1) DE CE AM ALES PROIECTUL
+Am ales acest proiect deoarece reducerea dimensionalitatii este o problema fascinanta si esentiala in invatarea automata. M-a atras foarte mult ideea de a lua date complexe, cu multe dimensiuni (cum sunt miile de pixeli dintr-o imagine), si de a le comprima in 2D sau 3D pentru a le putea vizualiza si intelege uman. De asemenea, mi-am dorit sa compar o metoda liniara clasica (PCA) cu o metoda neliniara avansata (t-SNE) si sa observ practic cum afecteaza aceste transformari performanta si viteza unor algoritmi clasici de clasificare.
 
-Tema aleasă vizează un set de date din domeniul sănătății (donarea de sânge). Scopul este de a transforma datele multidimensionale într-un spațiu bidimensional pentru a identifica structuri ascunse, clustere de donatori și pentru a compara modul în care o metodă liniară (PCA) versus una non-liniară (t-SNE) reușește să păstreze informația esențială.
+### 2) UN LINK DE UNDE AM LUAT DATELE
+Pentru acest proiect am ales celebrul set de date MNIST, care contine 70.000 de imagini reprezentand cifre scrise de mana (de la 0 la 9). 
+- **Link catre date:** [OpenML - MNIST_784](https://www.openml.org/d/554)
 
-   📊 Sursa Datelor
-Setul de date utilizat este **Blood Transfusion Service Center**, preluat de pe platforma OpenML.
-* **Link către date:** [OpenML Dataset ID 1464](https://www.openml.org/search?type=data&sort=runs&status=active&id=1464)
-* **Descriere:** Datele conțin informații despre 748 de donatori, având următoarele atribute:
-    * **Recency:** Luni de la ultima donare.
-    * **Frequency:** Numărul total de donări.
-    * **Monetary:** Cantitatea totală de sânge (c.c.).
-    * **Time:** Luni de la prima donare.
-    * **Target:** Variabilă binară (dacă persoana a donat sau nu în perioada analizată).
 
-   🎯 Obiectivele Proiectului
-1. **Curățarea și Standardizarea datelor:** Pregătirea atributelor numerice pentru algoritmi (scalare obligatorie).
-2. **Aplicarea PCA:** Reducerea dimensionalității prin maximizarea varianței și vizualizarea raportului de informație păstrată.
-3. **Aplicarea t-SNE:** Vizualizarea relațiilor non-liniare și optimizarea hiperparametrilor (perplexity, learning rate) pentru o segmentare vizuală clară.
-4. **Analiză Comparativă:** Evaluarea celor două metode în ceea ce privește separabilitatea claselor de donatori.
-
+### 3) OBIECTIVELE PROIECTULUI MEU
+Problema principala pe care incerc sa o rezolv este recunoasterea cifrelor scrise de mana intr-un mod cat mai eficient.
+1. Sa curat, sa explorez si sa pregatesc setul de date MNIST pentru antrenare (EDA).
+2. Sa implementez si sa analizez vizual algoritmii PCA (Principal Component Analysis) si t-SNE pentru reducerea dimensiunilor.
+3. Sa folosesc datele transformate pentru a antrena si optimiza 3 algoritmi diferiti de Machine Learning (KNN, Random Forest si SVM).
+4. Sa compar modelele din punct de vedere al acuratetii si al timpului de executie, justificand alegerile facute si extragand concluzii clare.
